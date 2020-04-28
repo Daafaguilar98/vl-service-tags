@@ -9,3 +9,4 @@ app.set("PORT", process.env.PORT || 3000);
 app.listen(app.get("PORT"), () => {
     console.log(`Server is running in port ${app.get("PORT")}`);
 });
+exports.default = app;
