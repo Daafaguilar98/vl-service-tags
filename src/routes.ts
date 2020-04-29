@@ -1,8 +1,11 @@
 import { Router } from "express";
-import { getTags } from "./controllers/tags_controller"
+import { getTags, createTag, updateTag, deleteTag } from "./controllers/tags_controller"
 
-const routes = Router();
+const router = Router();
 
-routes.get("/tags", getTags)
+router.get("/tags", getTags);
+router.post("/tags", createTag);
+router.put("/tags/:id", updateTag);
+router.delete("/tags/:id", deleteTag);
 
-export default routes;
+export default router;
