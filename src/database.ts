@@ -1,11 +1,10 @@
 import mongoose from "mongoose";
-
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/valiu-dev";
+import config from "./config";
 
 const connect = () => {
     return new Promise(async (resolve, reject) => {
         try {
-            await mongoose.connect(MONGODB_URI, {
+            await mongoose.connect(config.MONGODB.URI, {
                 useNewUrlParser: true, useUnifiedTopology: true
             })
             resolve();
@@ -16,11 +15,21 @@ const connect = () => {
     })
 }
 
+const drop = () => {
+    return new Promise((resolve, reject) => {
+        mongoose.connection.db.dropDatabase(function (err, result) {
+            if (err) return reject();
+            resolve();
+        })
+    })
+}
+
 const close = () => {
     return mongoose.disconnect();
 }
 
 export default {
     connect,
+    drop,
     close
 }
