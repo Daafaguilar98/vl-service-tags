@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8257a6dc63101c22cef",
+    "revision": "53337682de85fdd726b8",
     "url": "/css/app.0378adf5.css"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/valiu-logo.707d9b53.png"
   },
   {
-    "revision": "c365cd52aa71528ce8762503c8b9edaf",
+    "revision": "0e55a722018d0656a0f183366e979e9d",
     "url": "/index.html"
   },
   {
-    "revision": "b8257a6dc63101c22cef",
-    "url": "/js/app.6094f3c5.js"
+    "revision": "53337682de85fdd726b8",
+    "url": "/js/app.0af4ec0c.js"
   },
   {
-    "revision": "da782907ebdeb2c3f362",
-    "url": "/js/chunk-vendors.0d15ac92.js"
+    "revision": "4dbf35f7cd2fcf8b9037",
+    "url": "/js/chunk-vendors.9801cc4c.js"
   },
   {
     "revision": "effb37db9d634362f492bc2daf243e08",

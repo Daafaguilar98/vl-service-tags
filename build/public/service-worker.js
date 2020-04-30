@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.527455ac29ce51d04c135df4e75d2727.js"
+  "/precache-manifest.e906729745ce64684360dcee2516e985.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vl-front-tags"});
