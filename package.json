@@ -6,7 +6,8 @@
   "scripts": {
     "ts": "tsc -w",
     "dev": "nodemon ./build/index.js",
-    "postinstall": "tsc",
+    "build": "tsc",
+    "postinstall": "npm run build",
     "start": "node ./build/index.js",
     "test": "NODE_ENV=test nodemon --watch . --ext ts --exec \"mocha -r ts-node/register test/**/*.test.ts\""
   },

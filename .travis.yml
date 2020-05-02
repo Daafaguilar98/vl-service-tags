@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - 12.16.3
+
+cache:
+  npm: false
+
+branches:
+  only:
+    - feature_travis
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: gixw9XniD8kaFEYXpdgR3KuRiEJmX44dwvY/dKV2Zk+OMC0IP/6/fjDe5PpBh82wHsjkPLxqmlelRQf6IU6PDmez9BC6E4wHwchnIfv1fDYFxmqDmPN3bergPdBupA3SEwbsF8IxPo4trGKa9nmZj62KECQuoaJ1rAL2vrv/+vWixatQ47ppsmX5boZGgbOeCH0PI2XmeOjhqiLcDRqYtLAJIsw7itWTXK1trSf8I4J4aYC9uBFFEsDk8ReUfUa/8N6iVHOL+ADBqE2tPyEYjgLqJ5J0RwsqlFfGWGecDULj7iJO01x6XPazjJom+NrM6K00qj0mp2sqwJSuvIzgrhBQgXTX/IF4kpOXqUQ6N3+jGlFuR6R8gO7Ggn24065X0oxbk5RO8X/wYj31Yfu9v7E0rSYUw8f0FG+IHY87vbsEzYZwJ4b2GHjjDJ4E++dnLioJOR2r7Z9mAdMc9h9MYs5UeoIgdtBPEb90HHbGgi5MMl0CGuBWz1Et6Qw3LkQGmBnutOclnW+HyyjSUMTU8TpSIw7XGAULecp3kB2+ZFS63WBag8JS8975bVzAn+l4LoQ4qUymQSOHVDeqZdQVAedRmRCHib3zQJ5U8hmNBUaTn6rSDrgRTn3kWH9NXNXQXNOAl2bhQYjhfN77oIE8lq2ViN03HcBGfnN5n3edN/Q=
