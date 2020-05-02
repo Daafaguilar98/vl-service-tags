@@ -9,6 +9,9 @@ branches:
   only:
     - feature_travis
 
+services:
+  - mongodb
+
 deploy:
   provider: heroku
   api_key:
